@@ -1,7 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Geologica } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+// Font files can be colocated inside of `app`
+const allrox = localFont({
+  src: '../public/fonts/Allrox.ttf',
+  display: 'swap',
+  variable: '--font-allrox',
+})
+const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica', })
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className='bg-black'>
+      <body className={`${geologica.className}`}>{children}</body>
     </html>
   )
 }
