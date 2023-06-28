@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-black'>
-      <body className={`${geologica.className}`}>{children}</body>
+    <html lang="en" className='bg-black '>
+      <body className={`${allrox.variable} ${geologica.variable} font-geologica`}>{children}</body>
     </html>
   )
 }

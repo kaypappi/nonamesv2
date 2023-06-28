@@ -25,7 +25,7 @@ interface SiteHeaderProps {
 export function SiteHeader() {
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-black bg-opacity-60 py-4">
+    <header className="sticky top-0 z-40 w-full bg-black backdrop-blur bg-opacity-60 py-4">
       <div className="container flex h-16 items-center">
         <MainNav items={siteConfig.mainNav} />
         <MobileNav
@@ -38,7 +38,8 @@ export function SiteHeader() {
             <Link href="/signin">
               <div
                 className={buttonVariants({
-                variant:"default"
+                variant:"default",
+                size:"sm"
                 })}
               >
                 Create Account
