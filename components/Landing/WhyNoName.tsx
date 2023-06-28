@@ -20,12 +20,12 @@ const WhyNoName = ({ classes }: WhyNoNameProps) => {
       <Image src={CircleQuestion} alt='floating locks' className='absolute -left-20 top-20 z-10' />
       <Card className="w-full text-white my-40 relative overflow-y-hidden">
 
-        <CardContent className=' '>
+        <CardContent className=' p-20'>
 
 
           <div className="grid grid-cols-12">
-            <div className="col-span-6 my-20 row-span-12 flex flex-1 grow h-full flex-col justify-center">
-              <h2 className='h4 font-allrox'>Why <span className=' text-slate-800'>"No Name"</span> </h2>
+            <div className="col-span-6   row-span-12 flex flex-1 grow h-full flex-col justify-center">
+              <h2 className='h3 font-allrox'>Why <span className=' text-slate-800'>"No Name"</span> </h2>
               <p className=' p text-white text-opacity-70 max-w-md mt-4 mb-14'>"No Name" is an  application that enables anonymous conversations, empowering users to express themselves freely and forge genuine connections without the fear of judgment or repercussion. Unleash your thoughts, engage in open dialogue, and experience the power of anonymity in fostering meaningful interactions. Join WhisperChat and discover a world of authentic communication, where your voice truly matters.</p>
               <Button className=' w-max group' variant={'outline'} size={'sm'}>
               Create an account and start exploring

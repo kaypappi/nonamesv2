@@ -20,6 +20,11 @@ module.exports = {
         allrox: ['var(--font-allrox)'],
         geologica: ['var(--font-geologica)'],
       },
+      spacing:{
+        '120':'30rem',
+        '128':'32rem',
+        '144':'36rem'
+      },
       colors: {
         'brand': {
           '50': '#fbf5ff',
