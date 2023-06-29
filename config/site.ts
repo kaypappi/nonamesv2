@@ -1,8 +1,5 @@
 import type { MainNavItem } from "@/types"
 
-import { productCategories } from "@/config/products"
-import { slugify } from "@/lib/utils"
-
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
