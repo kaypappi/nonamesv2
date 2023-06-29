@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqCard from '../FaqCard'
+import FaqCard from "@/components/faqCard"
 import { Card, CardContent, CardHeader } from '../ui/card'
 import QuestionMark from "../../public/question.svg"
 import Image from 'next/image'

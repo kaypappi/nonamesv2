@@ -8,7 +8,7 @@ const allrox = localFont({
   display: 'swap',
   variable: '--font-allrox',
 })
-const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica', })
+const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica', display:'swap' })
 
 export const metadata = {
   title: 'Create Next App',
