@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../UI/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import CircleQuestion from "../../public/circleQuestion.svg"

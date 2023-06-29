@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react'
 import { ScrollArea } from './ui/scroll-area'
-import { Separator } from './UI/separator'
-import { Card, CardContent } from './UI/card'
+import { Separator } from './ui/separator'
+import { Card, CardContent } from './ui/card'
 
 interface faqCardProps {
     faqs: {

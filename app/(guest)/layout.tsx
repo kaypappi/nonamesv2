@@ -12,7 +12,7 @@ export default async function LobbyLayout({ children }: LobbyLayoutProps) {
     <div className="relative flex min-h-screen flex-col ">
       <SiteHeader />
       <main className=" ">{children}</main>
-      <SiteFooter />
+      
     </div>
   )
 }

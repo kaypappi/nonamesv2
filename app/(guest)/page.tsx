@@ -1,7 +1,7 @@
 import Faq from '@/components/Landing/Faq'
 import Hero from '@/components/Landing/Hero'
 import WhyNoName from '@/components/Landing/WhyNoName'
-import { Card, CardContent } from '@/components/UI/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 
