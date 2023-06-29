@@ -18,9 +18,7 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/layouts/main-nav"
 import { MobileNav } from "@/components/layouts/mobile-nav"
 
-interface SiteHeaderProps {
-  user: User | null
-}
+
 
 export function SiteHeader() {
 
