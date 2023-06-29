@@ -12,7 +12,7 @@ interface faqCardProps {
     }[]
 }
 
-const faqCard = ({ faqs }: faqCardProps) => {
+const FaqCard = ({ faqs }: faqCardProps) => {
     const [activeFaq, setActiveFaq] = useState(0)
     return (
         <div className=' text-white grid grid-cols-12 gap-x-20'>
@@ -42,4 +42,4 @@ const faqCard = ({ faqs }: faqCardProps) => {
     )
 }
 
-export default faqCard
+export default FaqCard
