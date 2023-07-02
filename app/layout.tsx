@@ -8,7 +8,7 @@ const allrox = localFont({
   display: 'swap',
   variable: '--font-allrox',
 })
-const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica', })
+const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica', display:'swap' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-black'>
-      <body className={`${geologica.className}`}>{children}</body>
+    <html lang="en" className='bg-black '>
+      <body className={`${allrox.variable} ${geologica.variable} font-geologica`}>{children}</body>
     </html>
   )
 }

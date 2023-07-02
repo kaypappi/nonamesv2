@@ -20,7 +20,7 @@ import { Icons } from "@/components/icons"
 
 interface MobileNavProps {
   mainNavItems?: MainNavItem[]
-  sidebarNavItems: SidebarNavItem[]
+  sidebarNavItems: MainNavItem[]
 }
 
 export function MobileNav({ mainNavItems, sidebarNavItems }: MobileNavProps) {

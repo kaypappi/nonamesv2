@@ -18,7 +18,12 @@ module.exports = {
     extend: {
       fontFamily: {
         allrox: ['var(--font-allrox)'],
-        geolocation: ['var(--font-geolocation)'],
+        geologica: ['var(--font-geologica)'],
+      },
+      spacing:{
+        '120':'30rem',
+        '128':'32rem',
+        '144':'36rem'
       },
       colors: {
         'brand': {
