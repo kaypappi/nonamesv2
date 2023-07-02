@@ -16,7 +16,8 @@ import {
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Icons } from "@/components/icons"
+/* import Logo from "@/public/svgs/logo.svg" */
+/* import {Menu} from "lucide-react" */
 
 interface MobileNavProps {
   mainNavItems?: MainNavItem[]
@@ -34,7 +35,7 @@ export function MobileNav({ mainNavItems, sidebarNavItems }: MobileNavProps) {
           variant="ghost"
           className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 lg:hidden"
         >
-          <Icons.menu className="h-6 w-6" />
+         {/*  <Menu className="h-6 w-6" /> */}
           <span className="sr-only">Toggle Menu</span>
         </Button>
       </SheetTrigger>
@@ -46,7 +47,7 @@ export function MobileNav({ mainNavItems, sidebarNavItems }: MobileNavProps) {
             className="flex items-center"
             onClick={() => setIsOpen(false)}
           >
-            <Icons.logo className="mr-2 h-4 w-4" aria-hidden="true" />
+            {/* <Logo className="mr-2 h-4 w-4"/> */}
             <span className="font-bold">{siteConfig.name}</span>
           </Link>
         </div>

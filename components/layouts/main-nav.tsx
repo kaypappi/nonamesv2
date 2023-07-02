@@ -16,7 +16,7 @@ import {
   navigationMenuTriggerStyle,
   NavigationMenuIndicator
 } from "@/components/ui/navigation-menu"
-import { Icons } from "@/components/icons"
+import { Icon } from "@/components/icons"
 
 interface MainNavProps {
   items?: MainNavItem[]
@@ -30,7 +30,7 @@ export function MainNav({ items }: MainNavProps) {
         href="/"
         className="hidden items-center space-x-2 lg:flex"
       >
-        <Icons.logo className="h-10 w-28" aria-hidden="true" />
+        <Icon className="h-10 w-28 text-white" name="logo" aria-hidden="true" />
 
       </Link>
       <NavigationMenu className="  w-full mx-auto">

@@ -1,8 +1,9 @@
 import React from 'react'
-import FaqCard from "@/components/faqCard"
+import FaqCard from "@/components/FaqCard"
 import { Card, CardContent, CardHeader } from '../ui/card'
-import QuestionMark from "../../public/question.svg"
+import QuestionMark from "@/public/svgs/question.svg"
 import Image from 'next/image'
+
 
 const faqs = [
     {
@@ -72,10 +73,11 @@ const faqs = [
 const Faq = () => {
     return (
         <div className=' relative w-full'>
-            <Image src={QuestionMark} alt='floating locks' className='absolute -right-5 bottom-28 z-10' />
+            <Image width={40} height={40} src={QuestionMark} alt='floating locks' className='absolute -right-5 bottom-28 z-10' />
             <Card className="w-full text-white my-40 p-20 relative overflow-y-hidden">
                 <CardHeader className='p-0 mb-10'>
                     <h2 className='h3 font-allrox'>Things <span className=' text-slate-800'> people ask </span> us all the time </h2>
+                    
                 </CardHeader>
                 <CardContent className=''>
                     <FaqCard faqs={faqs} />

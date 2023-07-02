@@ -4,8 +4,9 @@ import React, { forwardRef } from 'react'
 import { Button } from '../ui/button'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Locks from "../../public/locks.svg"
-import ChatBubbles from "../../public/chatbubbles.svg"
+import { ReactComponent as Locks } from "../../public/svgs/locks.svg"
+import { ReactComponent as ChatBubbles } from "../../public/svgs/chatbubbles.svg"
+import Link from 'next/link'
 
 
 const Hero = () => {
@@ -17,7 +18,8 @@ const Hero = () => {
                     repeat: Infinity
                 }
             }}>
-                <Image src={Locks} alt='floating locks' className='absolute -left-36  ' />
+                
+                <Locks className="absolute -left-36 w-[73px] h-[73px]" />
             </motion.div>
             <motion.div animate={{ y: [450, 420, 450] }} transition={{
                 y: {
@@ -25,7 +27,7 @@ const Hero = () => {
                     repeat: Infinity
                 }
             }}>
-                <Image src={ChatBubbles} alt='floating locks' className='absolute -right-36 -bottom-0 ' />
+                <ChatBubbles className="absolute -right-36 -bottom-0 w-[216px] h-[216px]"/>
             </motion.div>
 
             <div className=' flex flex-col items-center text-center '>
@@ -41,12 +43,18 @@ const Hero = () => {
                         variant={'default'}
                         size={'lg'}
                         className='w-48'
-                    >Create Account</Button>
+                        asChild
+                    >
+                        <Link href="/signup">Create Account</Link>
+                    </Button>
                     <Button
                         variant={'outline'}
                         size={'lg'}
                         className='w-48'
-                    >Sign In</Button>
+                        asChild
+                    >
+                        <Link href="/signin">Sign In</Link>
+                    </Button>
                 </div>
             </div>
 

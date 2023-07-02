@@ -1,6 +1,7 @@
 
 
 import { type Icons } from "@/components/icons"
+/// <reference types="next-plugin-svgr/types/svgFileLoader" />
 
 export interface NavItem {
   title: string
