@@ -18,4 +18,4 @@ const auth = getAuth(app);
 const initFirebase = () => {
   return app;
 };
-export { auth, initFirebase };
+export { auth, initFirebase, firebase };
